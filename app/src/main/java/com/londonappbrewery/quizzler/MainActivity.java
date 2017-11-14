@@ -54,6 +54,17 @@ public class MainActivity extends Activity {
         mScoreTextView = (TextView) findViewById(R.id.score);
         mProgressBar = (ProgressBar) findViewById(R.id.progress_bar);
 
+        if(savedInstanceState != null) {
+            mScore = savedInstanceState.getInt("ScoreKey");
+            mIndex = savedInstanceState.getInt("IndexKey");
+            mScoreTextView.setText("Score " + mScore + "/" + mQuestionBank.length);
+//            if(mIndex == 0) {
+//                makeAlertBox();
+//            }
+        } else {
+            mScore = 0;
+            mIndex = 0;
+        }
 
         mQuestion = mQuestionBank[mIndex].getQuestionID();
         mQuestionTextView.setText(mQuestion);
@@ -80,25 +91,7 @@ public class MainActivity extends Activity {
         mIndex = (mIndex + 1) % mQuestionBank.length;
 
         if(mIndex == 0) {
-            AlertDialog.Builder alert = new AlertDialog.Builder(this);
-            alert.setTitle("Game Over");
-            alert.setCancelable(false);
-            alert.setMessage("You scored " + mScore + " points!");
-            alert.setNeutralButton("Restart", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    mScore = 0;
-                    mScoreTextView.setText("Score " + mScore + "/" + mQuestionBank.length);
-                    mProgressBar.setProgress(0);
-                }
-            });
-            alert.setPositiveButton("Close Application", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    finish();
-                }
-            });
-            alert.show();
+            makeAlertBox();
         }
         mQuestion = mQuestionBank[mIndex].getQuestionID();
         mQuestionTextView.setText(mQuestion);
@@ -119,5 +112,35 @@ public class MainActivity extends Activity {
 
         answerToast.setGravity(Gravity.CENTER,0,0);
         answerToast.show();
+    }
+
+    private void makeAlertBox() {
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setTitle("Game Over");
+        alert.setCancelable(false);
+        alert.setMessage("You scored " + mScore + " points!");
+        alert.setNeutralButton("Restart", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                mScore = 0;
+                mScoreTextView.setText("Score " + mScore + "/" + mQuestionBank.length);
+                mProgressBar.setProgress(0);
+            }
+        });
+        alert.setPositiveButton("Close Application", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                finish();
+            }
+        });
+        alert.show();
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        outState.putInt("ScoreKey", mScore);
+        outState.putInt("IndexKey", mIndex);
     }
 }

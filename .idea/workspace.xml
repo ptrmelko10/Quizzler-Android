@@ -50,8 +50,8 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/londonappbrewery/quizzler/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="86" column="72" lean-forward="false" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
+            <state relative-caret-position="250">
+              <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="62" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#762#781#0" expanded="true" />
@@ -67,15 +67,16 @@
                 <element signature="e#1305#1325#0" expanded="true" />
                 <element signature="e#1361#1381#0" expanded="true" />
                 <element signature="e#1417#1437#0" expanded="true" />
-                <element signature="e#2225#2410#0" expanded="true" />
-                <element signature="e#2409#2410#0" expanded="true" />
-                <element signature="e#2454#2640#0" expanded="true" />
-                <element signature="e#2639#2640#0" expanded="true" />
-                <element signature="e#3374#3375#0" expanded="true" />
-                <element signature="e#3435#3635#0" expanded="true" />
-                <element signature="e#3634#3635#0" expanded="true" />
-                <element signature="e#4112#4134#0" expanded="true" />
-                <element signature="e#4346#4370#0" expanded="true" />
+                <element signature="e#2627#2812#0" expanded="true" />
+                <element signature="e#2811#2812#0" expanded="true" />
+                <element signature="e#2856#3042#0" expanded="true" />
+                <element signature="e#3041#3042#0" expanded="true" />
+                <element signature="e#3645#3667#0" expanded="true" />
+                <element signature="e#3879#3903#0" expanded="true" />
+                <element signature="e#4303#4618#0" expanded="true" />
+                <element signature="e#4617#4618#0" expanded="true" />
+                <element signature="e#4674#4854#0" expanded="true" />
+                <element signature="e#4853#4854#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,8 +88,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+            <state relative-caret-position="150">
+              <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -109,29 +110,6 @@
                 <element signature="e#582#583#0" expanded="true" />
                 <element signature="e#614#615#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="-10">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -2319,16 +2297,16 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="150">
+          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/londonappbrewery/quizzler/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="86" column="72" lean-forward="false" selection-start-line="86" selection-start-column="72" selection-end-line="86" selection-end-column="72" />
+        <state relative-caret-position="250">
+          <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="62" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#762#781#0" expanded="true" />
@@ -2344,15 +2322,16 @@
             <element signature="e#1305#1325#0" expanded="true" />
             <element signature="e#1361#1381#0" expanded="true" />
             <element signature="e#1417#1437#0" expanded="true" />
-            <element signature="e#2225#2410#0" expanded="true" />
-            <element signature="e#2409#2410#0" expanded="true" />
-            <element signature="e#2454#2640#0" expanded="true" />
-            <element signature="e#2639#2640#0" expanded="true" />
-            <element signature="e#3374#3375#0" expanded="true" />
-            <element signature="e#3435#3635#0" expanded="true" />
-            <element signature="e#3634#3635#0" expanded="true" />
-            <element signature="e#4112#4134#0" expanded="true" />
-            <element signature="e#4346#4370#0" expanded="true" />
+            <element signature="e#2627#2812#0" expanded="true" />
+            <element signature="e#2811#2812#0" expanded="true" />
+            <element signature="e#2856#3042#0" expanded="true" />
+            <element signature="e#3041#3042#0" expanded="true" />
+            <element signature="e#3645#3667#0" expanded="true" />
+            <element signature="e#3879#3903#0" expanded="true" />
+            <element signature="e#4303#4618#0" expanded="true" />
+            <element signature="e#4617#4618#0" expanded="true" />
+            <element signature="e#4674#4854#0" expanded="true" />
+            <element signature="e#4853#4854#0" expanded="true" />
           </folding>
         </state>
       </provider>
