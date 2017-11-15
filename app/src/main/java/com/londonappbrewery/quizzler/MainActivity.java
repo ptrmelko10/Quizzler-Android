@@ -22,6 +22,7 @@ public class MainActivity extends Activity {
     int mScore;
     int mIndex;
     int mQuestion;
+    boolean mGameOver;
 
     // TODO: Uncomment to create question bank
     private TrueFalse[] mQuestionBank = new TrueFalse[] {
@@ -64,6 +65,7 @@ public class MainActivity extends Activity {
         } else {
             mScore = 0;
             mIndex = 0;
+            mGameOver = false;
         }
 
         mQuestion = mQuestionBank[mIndex].getQuestionID();
@@ -115,6 +117,7 @@ public class MainActivity extends Activity {
     }
 
     private void makeAlertBox() {
+        mGameOver = true;
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle("Game Over");
         alert.setCancelable(false);
@@ -142,5 +145,6 @@ public class MainActivity extends Activity {
 
         outState.putInt("ScoreKey", mScore);
         outState.putInt("IndexKey", mIndex);
+        outState.putBoolean("GameKey", mGameOver);
     }
 }
